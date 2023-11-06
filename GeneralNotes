@@ -1,0 +1,76 @@
+//OOPS principles
+A programming language is called as OOP's, if it can satisfy 3 rules:
+	1.Encapsulation : Under this we had concepts called Data-Hiding.
+	2.Ploymorphism : Under this we had concepts called OverLoading and Overriding.
+	2.Inheritance : Under this we had concepts called Abstract Classes and Interfaces.
+	
+=>***The Javacode we write will be compiled into the ByteCode by the compiler and that ByteCode goes and run on the JVM.
+	 =>The extension for JavaCode is .java, and the extension for ByteCode is .class 
+     Out Of all the files in your project, the execution will start from the first[main] file which you specify using the main method.
+     Not only main it looks for an specific signature, specific method it consists of an specific name and values.
+     And the signature is "public static void main()" method;
+     As Java is an object Oriented to create an object we need a class. ***	
+	
+//Static Importance in Main...	
+If we don't use static it becomes non-static method;
+If we don't use static we should create object to call main method, as main is the starting point of execution
+If execution is not started how can you create object of class. That is the reason we use static.
+The reason why we are using static keyword is we no need to create object;
+	
+
+/* JDK : To develop and run java Applications JDK is required(It provides environment to run, at developers side).
+ * JRE : But to run it we need JRE.If you are at client machine you need it
+ * JVM : It is responsible to execute our program line by line, that's why it is called interpreter.
+ * 
+ * JRE = JVM + Library Classes
+ * JDK = JRE + Development Tools 
+ 
+ 1. JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. 
+    JDK is a kit(or package) that includes two things: Development Tools(to provide an environment to develop your java programs)
+    JRE (to execute your java program).
+
+ 2. JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop)
+    the java program(or application)onto your machine. JRE is only used by those who only want to run Java programs that are end-users of your system.
+
+ 3. JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both. 
+    Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line,
+    hence it is also known as an interpreter.
+ 
+ => JDK compiles the written code.JRE validates your byte code, load your class.
+ => Code runs on JVM, JRE provides the environment and some extra files for the code to run.
+ 
+ */	
+ 
+//Object Notation
+As Java is an object oriented programming, everything inside java is an object.So, to create an object you need a class.
+//Compiling	
+The written Java code will be sent to JVM in the form of ByteCode by the compiler.
+For compiling Javac className.java
+For running Java className
+
+//Static Block
+we can use static block to initiate all static var's as they no need to be initiated always;
+while calling or creating object static and constructors are initiated;
+
+Every time object is created there will be two steps:
+	1)class Loads  2)objects are instantiated
+This is the reason why static blocks are always called first.
+To load the class without creating the object we can use a Class called "Class".So only static block will be called;
+we cannot use directly a non-static variable in a static method, but U can with object reference.
+
+
+//**Stack and Heap memory...
+=> The moment you have main every method will have its own stack, it will have two columns(Key and Value) 
+and many rows depending the data you need.
+=> Local variables are part of the stack(Method level variables).
+
+=> The object inside heap will have two sections:The first section will have all the instance variables(class level)
+Second section will have the method declaration, it will have only the definition but the actual area where it will consume is Stack.
+=> When you say new className it will create a new object in Heap Memory, but the address of the object will be
+stored in the Stack memory. So we can say that there is a link between stack and heap memory.
+
+
+
+
+
+                                                                                
